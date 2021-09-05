@@ -1,30 +1,43 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <Menubar :model="items">
+      <template #start>
+        <h1>Rhada</h1>
+      </template>
+      <template #end>
+        <InputText placeholder="Search" type="text" />
+      </template>
+      <Menubar :model="items">
+        <template #item="{ item }">
+          <router-link :to="item.to">
+            {{ item.label }}
+          </router-link>
+        </template>
+      </Menubar>
+    </Menubar>
+    <router-view />
   </div>
-  <router-view />
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import { ref } from "vue";
 
-#nav {
-  padding: 30px;
-}
+export default {
+  setup() {
+    const items = ref([
+      {
+        label: "Home",
+        icon: "pi pi-fw pi-home",
+        to: "/",
+      },
+      {
+        label: "About",
+        icon: "pi pi-fw pi-question-circle",
+        to: "/about",
+      },
+    ]);
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+    return { items };
+  },
+};
+</script>
