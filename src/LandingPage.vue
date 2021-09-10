@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <loading :loading="loading" />
     <the-navbar :light-theme="lightNavbar" />
 
     <v-main>
@@ -9,7 +10,8 @@
 </template>
 
 <script>
-import TheNavbar from "../components/main/TheNavbar";
+import TheNavbar from "./components/main/TheNavbar";
+import Loading from "./components/default/loading";
 
 import GlobalComputed from "@/helpers/global-computed";
 import GlobalMethods from "@/helpers/global-methods";
@@ -19,6 +21,7 @@ export default {
 
   components: {
     TheNavbar,
+    Loading,
   },
   data: () => ({
     //
@@ -208,4 +211,3 @@ html,
   transition: opacity 1s ease-in, transform 0.5s ease-out;
 }
 </style>
-

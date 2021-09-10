@@ -19,7 +19,7 @@
               :delay="500"
               :text="$t('sections.1.title')"
             />
-            <!-- <span class="secondary--text font-weight-medium">NFTrail</span> -->
+            <!-- <span class="secondary--text font-weight-medium">Rhada</span> -->
           </h1>
         </v-slide-y-transition>
         <v-slide-x-transition appear>

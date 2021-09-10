@@ -35,10 +35,6 @@
               >{{ $t(`links.${link.name}`) }}</v-btn
             >
           </div>
-
-          <div class="d-flex align-center ms-8">
-            <app-button :large="pcOnly" />
-          </div>
         </div>
       </v-slide-x-reverse-transition>
     </v-container>
@@ -51,11 +47,10 @@ import Logo from "./logo";
 import GlobalComputed from "@/helpers/global-computed";
 import GlobalMethods from "@/helpers/global-methods";
 import links from "@/helpers/links";
-import AppButton from "../custom/AppButton.vue";
 
 export default {
   name: "navbar",
-  components: { Logo, AppButton },
+  components: { Logo },
   props: {
     lightTheme: {
       type: Boolean,

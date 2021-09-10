@@ -1,6 +1,9 @@
-import { createRouter, createWebHistory } from "vue-router";
-import LandingPage from "../views/LandingPage.vue";
+import Vue from "vue";
+import VueRouter from "vue-router";
+import LandingPage from "../LandingPage.vue";
 import Home from "../views/Home.vue";
+
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -11,8 +14,8 @@ const routes = [
   },
 ];
 
-const router = createRouter({
-  history: createWebHistory(),
+const router = new VueRouter({
+  base: process.env.BASE_URL,
   routes,
 });
 
