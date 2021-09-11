@@ -19,7 +19,6 @@
               :delay="500"
               :text="$t('sections.1.title')"
             />
-            <!-- <span class="secondary--text font-weight-medium">Rhada</span> -->
           </h1>
         </v-slide-y-transition>
         <v-slide-x-transition appear>
@@ -30,7 +29,6 @@
               :delay="2000"
               :text="$t('sections.1.subtitle')"
             ></animate-text>
-            <!-- <div>Information Technology & Electronic Business Company</div> -->
           </h2>
         </v-slide-x-transition>
         <div
@@ -40,7 +38,6 @@
             'fade-up-on': showSection1Actions,
           }"
         >
-          <!-- <v-btn @click="navigateToLink('#productsSection')" color="strong-text" tile :large="pcOnly" depressed outlined class="me-6">{{$t('sections.actions.products')}}</v-btn> -->
           <v-btn
             @click="navigateToLink('#aboutSection')"
             color="strong-text"
@@ -73,7 +70,7 @@
           class=""
         >
           <v-img
-            src="/assets/eth-diamond-purple.png"
+            src="/assets/section1.png"
             contain
             width="100%"
             max-height="320"
@@ -93,17 +90,6 @@
           >
             {{ $t("sections.about.row1.content") }}
           </p>
-          <div class="actions">
-            <v-btn
-              @click="navigateToLink('#industriesSection')"
-              tile
-              large
-              depressed
-              color="primary"
-              href="https://ethereum.org/en/developers/docs/standards/tokens/erc-721/"
-              >{{ $t("sections.about.row1.action") }}</v-btn
-            >
-          </div>
         </v-col>
       </v-row>
 
@@ -115,7 +101,7 @@
           class=""
         >
           <v-img
-            src="/assets/ipfs-logo-vector-ice.svg"
+            src="/assets/section2.png"
             contain
             width="100%"
             max-height="320"
@@ -135,183 +121,14 @@
           >
             {{ $t("sections.about.row2.content") }}
           </p>
-          <div class="actions">
-            <v-btn
-              @click="navigateToLink('#industrySection')"
-              tile
-              large
-              depressed
-              color="primary"
-              href="https://ipfs.io/"
-              >{{ $t("sections.about.row2.action") }}</v-btn
-            >
-          </div>
         </v-col>
       </v-row>
-
-      <v-row>
-        <v-col
-          :data-aos="pcOnly ? (isRtl ? 'fade-left' : 'fade-right') : 'fade-up'"
-          data-aos-duration="800"
-          :cols="pcOnly ? 5 : 12"
-          class=""
-        >
-          <v-img
-            src="/assets/chainlink.png"
-            contain
-            width="100%"
-            max-height="320"
-          ></v-img>
-        </v-col>
-        <v-spacer></v-spacer>
-        <v-col
-          :data-aos="pcOnly ? (isRtl ? 'fade-right' : 'fade-left') : 'fade-up'"
-          data-aos-duration="800"
-          class="mt-6 mt-lg-0"
-          :cols="pcOnly ? 6 : 12"
-        >
-          <h1 class="headline">{{ $t("sections.about.row3.title") }}</h1>
-          <p
-            class="medium-text text-light--text mt-6 mt-lg-8"
-            :class="{ 'text-center': phoneOnly }"
-          >
-            {{ $t("sections.about.row3.content") }}
-          </p>
-          <div class="actions">
-            <v-btn
-              tile
-              large
-              depressed
-              color="primary"
-              href="https://chainlinklabs.com/"
-              >{{ $t("sections.about.row3.action") }}</v-btn
-            >
-          </div>
-        </v-col>
-      </v-row>
-
-      <v-row style="margin-top: 3.5rem" class="flex-row-reverse">
-        <v-col
-          :data-aos="pcOnly ? (isRtl ? 'fade-right' : 'fade-left') : 'fade-up'"
-          data-aos-duration="800"
-          :cols="pcOnly ? 5 : 14"
-          class=""
-        >
-          <v-img
-            src="/assets/polygon.png"
-            contain
-            width="100%"
-            max-height="340"
-          ></v-img>
-        </v-col>
-        <v-spacer></v-spacer>
-        <v-col
-          :data-aos="pcOnly ? (isRtl ? 'fade-left' : 'fade-right') : 'fade-up'"
-          data-aos-duration="800"
-          class="mt-6 mt-lg-0"
-          :cols="pcOnly ? 6 : 14"
-        >
-          <h1 class="headline">{{ $t("sections.about.row4.title") }}</h1>
-          <p
-            class="medium-text text-light--text mt-6 mt-lg-8"
-            :class="{ 'text-center': phoneOnly }"
-          >
-            {{ $t("sections.about.row4.content") }}
-          </p>
-          <div class="actions">
-            <v-btn
-              @click="navigateToLink('#industrySection')"
-              tile
-              large
-              depressed
-              color="primary"
-              href="https://polygon.technology/"
-              >{{ $t("sections.about.row4.action") }}</v-btn
-            >
-          </div>
-        </v-col>
-      </v-row>
-
-      <v-row>
-        <v-col
-          :data-aos="pcOnly ? (isRtl ? 'fade-left' : 'fade-right') : 'fade-up'"
-          data-aos-duration="800"
-          :cols="pcOnly ? 5 : 12"
-          class=""
-        >
-          <v-img
-            src="/assets/covalent.png"
-            contain
-            width="80%"
-            max-height="400"
-          ></v-img>
-        </v-col>
-        <v-spacer></v-spacer>
-        <v-col
-          :data-aos="pcOnly ? (isRtl ? 'fade-right' : 'fade-left') : 'fade-up'"
-          data-aos-duration="800"
-          class="mt-6 mt-lg-0"
-          :cols="pcOnly ? 6 : 12"
-        >
-          <h1 class="headline">{{ $t("sections.about.row5.title") }}</h1>
-          <p
-            class="medium-text text-light--text mt-6 mt-lg-8"
-            :class="{ 'text-center': phoneOnly }"
-          >
-            {{ $t("sections.about.row5.content") }}
-          </p>
-          <div class="actions">
-            <v-btn
-              tile
-              large
-              depressed
-              color="primary"
-              href="https://www.covalenthq.com/"
-              >{{ $t("sections.about.row5.action") }}</v-btn
-            >
-          </div>
-        </v-col>
-      </v-row>
-
-
-
-      <v-row style="margin-top: 3.5rem" class="flex-row-reverse">
-        <v-col
-          :data-aos="pcOnly ? (isRtl ? 'fade-right' : 'fade-left') : 'fade-up'"
-          data-aos-duration="800"
-          :cols="pcOnly ? 5 : 12"
-          class=""
-        >
-          <v-img
-            src="/assets/hiking.jpg"
-            contain
-            width="100%"
-            max-height="320"
-          ></v-img>
-        </v-col>
-        <v-spacer></v-spacer>
-        <v-col
-          :data-aos="pcOnly ? (isRtl ? 'fade-left' : 'fade-right') : 'fade-up'"
-          data-aos-duration="800"
-          class="mt-6 mt-lg-0"
-          :cols="pcOnly ? 6 : 12"
-        >
-          <h1 class="headline">{{ $t("sections.about.row6.title") }}</h1>
-          <p
-            class="medium-text text-light--text mt-6 mt-lg-8"
-            :class="{ 'text-center': phoneOnly }"
-          >
-            {{ $t("sections.about.row6.content") }}
-          </p>
-        </v-col>
-      </v-row>
-
     </home-section>
 
     <cols-section
       id="useCasesSection"
       headline="Use cases"
-      subtitle="NFTrail tokens can support a variety of use cases / transactions"
+      subtitle="RhadaPay tokens can support a variety of use cases / transactions"
       data-section="useCases"
       :cols="useCasesCols"
     >
@@ -320,7 +137,7 @@
     <cols-section
       id="assetClassesSection"
       headline="Asset Classes"
-      subtitle="Use NFTrail to tokenize various different type of assets"
+      subtitle="Use RhadaPay to tokenize various different type of assets"
       data-section="assetClasses"
       :cols="industriesCols"
     >
@@ -544,45 +361,24 @@ section {
     "en": {
         "sections": {
             "1": {
-                "title": "NFTrail",
-                "subtitle": "Create an on-chain document trail for your off-chain assets."
+                "title": "Rhada Pay",
+                "subtitle": "Managing DAO compensation the easy way"
             },
             "about": {
                 "title": "About",
-                "subtitle": "Combine NFTs and IPFS document storage to keep track of your assets.",
+                "subtitle": "Incentivize and reward different types of DAO contribution",
                 "row1": {
-                    "title": "Tokenize your physical assets",
-                    "content": "Mint an ERC-721 Token representing the asset you wish to track.",
-                    "action": "Learn more about NFTs"
+                    "title": "Community",
+                    "content": "Foster a sense of community and ownership by rewarding members in a fair and transparent way."
                 },
                 "row2": {
-                    "title": "Manage Documents on IPFS",
-                    "content": "Upload documentation regarding your asset such as Contracts, Maintenance Record etc. to IPFS and link it to your NFT.",
-                    "action": "Learn more about IPFS"
-                },
-                "row3": {
-                    "title": "Off-Chain Verification of Asset Data",
-                    "content": "NFTrail uses Chainlink Oracles to call Off-Chain APIs for verification of asset specific metadata.",
-                    "action": "Learn more about Chainlink"
-                },
-                "row4": {
-                    "title": "Layer 2 Scalability",
-                    "content": "The smart contracts underlying NFTrail are deployed on Polygon Layer 2 (currently Mumbai Testnet) to ensure high transaction throughput and low gas fees.",
-                    "action": "Learn more about Polygon"
-                },
-                "row5": {
-                    "title": "Query Ownership History",
-                    "content": "The NFTrail Dapp uses Covalents API to efficiently query the transaction history of the underlying asset tokens",
-                    "action": "Learn more about Covalent"
-                },
-                "row6": {
-                    "title": "Take your Token anywhere",
-                    "content": "As a ERC-721 token you can use the NFTrail Token anywhere in the blockhain NFT-Ecosystem (OpenSea etc.)"
+                    "title": "Contribution",
+                    "content": "Encourage and reward independent contribution to your project."
                 }
             },
             "actions": {
                 "contact": "Contact Us",
-                "about": "More About NFTrail"
+                "about": "More About RhadaPay"
             }
         }
     }

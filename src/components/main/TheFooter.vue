@@ -91,9 +91,9 @@ export default {
         {
           name: "github",
           icon: "mdi-github",
-          value: "ckoopmann/NFTrail",
+          value: "RhadaPay",
           color: "text",
-          href: "https://github.com/ckoopmann/NFTrail",
+          href: "https://github.com/RhadaPay/",
         },
       ],
     };
