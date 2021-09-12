@@ -95,6 +95,13 @@ export default {
           color: "text",
           href: "https://github.com/RhadaPay/",
         },
+        {
+          name: "discord",
+          icon: "mdi-discord",
+          value: "RhadaPay",
+          color: "text",
+          href: "https://discord.gg/F9NJ8znr",
+        },
       ],
     };
   },
