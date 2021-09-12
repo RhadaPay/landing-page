@@ -134,14 +134,6 @@
     >
     </cols-section>
 
-    <cols-section
-      id="assetClassesSection"
-      headline="Asset Classes"
-      subtitle="Use RhadaPay to tokenize various different type of assets"
-      data-section="assetClasses"
-      :cols="industriesCols"
-    >
-    </cols-section>
 
     <the-footer />
 
@@ -188,49 +180,17 @@ export default {
       return [
         {
           color: "blue",
-          icon: "mdi-cash-multiple",
-          headline: "Sale",
+          icon: "mdi-trophy",
+          headline: "Task Bounties",
           description:
-            "Bring transparency to various markets by proving ownership, maintenance record, registration etc. of the asset on sale.",
+            "Register / Manage tasks to be completed and automate the payout of the corresponding reward upon completion.",
         },
         {
           color: "deep-orange",
-          icon: "mdi-calendar-clock",
-          headline: "Lease",
+          icon: "mdi-account-clock",
+          headline: "Role Salaries",
           description:
-            "Document lease agreements as well as the state of the asset at the beginning / end of the lease",
-        },
-        {
-          color: "teal",
-          icon: "mdi-shield-edit-outline",
-          headline: "Insurance",
-          description:
-            "Support quoting / claims management by documenting damages on chain.",
-        },
-      ];
-    },
-    industriesCols() {
-      return [
-        {
-          color: "blue",
-          icon: "mdi-car-outline",
-          headline: "Vehicles",
-          description:
-            "Document changes in ownership, registration, maintenance and inspection of you vehicle.",
-        },
-        {
-          color: "deep-orange",
-          icon: "mdi-home-outline",
-          headline: "Real Estate",
-          description:
-            "Register your property on chain and keep track of appraisals, building permits and much more.",
-        },
-        {
-          color: "teal",
-          icon: "mdi-brush",
-          headline: "Art",
-          description:
-            "Tokenize your real-word masterpieces and manage documents regarding authenticity, restoration etc.",
+            "Manage roles within the DAO and payout a continously streamed salary to the holder of each role.",
         },
       ];
     },
