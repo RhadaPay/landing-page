@@ -1,4 +1,5 @@
-# RhadaPay Frontend
+# RhadaPay Landing Page
+This is the implementation of the RhadaPay landing page containing a summary of the project as well as a link to the actuall DApp.
 
 ## Project setup
 
