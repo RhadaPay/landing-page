@@ -70,7 +70,7 @@
           class=""
         >
           <v-img
-            src="/assets/section1.png"
+            src="/assets/section1.jpg"
             contain
             width="100%"
             max-height="320"
@@ -101,7 +101,7 @@
           class=""
         >
           <v-img
-            src="/assets/section2.png"
+            src="/assets/section2.jpg"
             contain
             width="100%"
             max-height="320"
