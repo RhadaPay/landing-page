@@ -9,6 +9,8 @@ import i18n from "./i18n";
 sync(store, router);
 Vue.config.productionTip = false;
 
+document.title = "Rhada";
+
 new Vue({
   router,
   store,
