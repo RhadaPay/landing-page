@@ -6,7 +6,8 @@
         
         "resources": {
             "subheader": "Checkout our resources",
-            "github": "Github"
+            "github": "Github",
+            "discord": "Discord"
         }
     }
 }

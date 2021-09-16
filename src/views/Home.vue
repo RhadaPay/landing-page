@@ -123,17 +123,47 @@
           </p>
         </v-col>
       </v-row>
+
+      <v-row>
+        <v-col
+          :data-aos="pcOnly ? (isRtl ? 'fade-left' : 'fade-right') : 'fade-up'"
+          data-aos-duration="800"
+          :cols="pcOnly ? 5 : 12"
+          class=""
+        >
+          <v-img
+            src="/assets/section3.jpeg"
+            contain
+            width="100%"
+            max-height="320"
+          ></v-img>
+        </v-col>
+        <v-spacer></v-spacer>
+        <v-col
+          :data-aos="pcOnly ? (isRtl ? 'fade-right' : 'fade-left') : 'fade-up'"
+          data-aos-duration="800"
+          class="mt-6 mt-lg-0"
+          :cols="pcOnly ? 6 : 12"
+        >
+          <h1 class="headline">{{ $t("sections.about.row3.title") }}</h1>
+          <p
+            class="medium-text text-light--text mt-6 mt-lg-8"
+            :class="{ 'text-center': phoneOnly }"
+          >
+            {{ $t("sections.about.row3.content") }}
+          </p>
+        </v-col>
+      </v-row>
     </home-section>
 
     <cols-section
-      id="useCasesSection"
-      headline="Use cases"
-      subtitle="RhadaPay tokens can support a variety of use cases / transactions"
-      data-section="useCases"
-      :cols="useCasesCols"
+      id="rewardTypesSection"
+      headline="Reward types"
+      subtitle="There are different ways in which DAO members can be rewarded for their work"
+      data-section="rewardTypes"
+      :cols="rewardTypesCols"
     >
     </cols-section>
-
 
     <the-footer />
 
@@ -176,7 +206,7 @@ export default {
     };
   },
   computed: {
-    useCasesCols() {
+    rewardTypesCols() {
       return [
         {
           color: "blue",
@@ -321,19 +351,23 @@ section {
     "en": {
         "sections": {
             "1": {
-                "title": "Rhada Pay",
-                "subtitle": "Managing DAO compensation the easy way"
+                "title": "Rhada",
+                "subtitle": "The Easy and Flexible way to reward DAO participation"
             },
             "about": {
                 "title": "About",
                 "subtitle": "Incentivize and reward different types of DAO contribution",
                 "row1": {
-                    "title": "Community",
-                    "content": "Foster a sense of community and ownership by rewarding members in a fair and transparent way."
+                    "title": "Community is king",
+                    "content": "When asked how to measure the success of a DAO, the answer depends on whether the members of the community are meaningfully engaged, beyond just holding tokens"
                 },
                 "row2": {
-                    "title": "Contribution",
-                    "content": "Encourage and reward independent contribution to your project."
+                    "title": "Reward contribution ...",
+                    "content": "Rhada allows Decentralized Organizations to clearly define what contributions will add value to their community. Then easily measure and reward those contributions."
+                },
+                "row3": {
+                    "title": "... to build engagement",
+                    "content": "By making it clear how the community can get involved, and providing flexible incentives for members to make meaningful contributions, DAOs can create effective, long term engagement with their organization"
                 }
             },
             "actions": {
