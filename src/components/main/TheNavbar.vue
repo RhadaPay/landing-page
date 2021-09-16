@@ -16,7 +16,7 @@
     <v-container class="d-flex align-center">
       <div>
         <!-- logo -->
-        <logo :light="light" :width="pcOnly ? 140 : 125" />
+        <logo :light="light" :width="pcOnly ? 120 : 100" />
       </div>
       <v-spacer />
       <v-slide-x-reverse-transition appear>
