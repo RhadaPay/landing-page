@@ -372,7 +372,7 @@ section {
             },
             "actions": {
                 "contact": "Contact Us",
-                "about": "More About RhadaPay"
+                "about": "More About Rhada"
             }
         }
     }
